@@ -32,3 +32,22 @@ const PI = 3.14159; // Const declaration prevents reassignment
 console.log(PI);
 //PI = 3;  // this throws an error in JavaScript
 console.log(PI);
+/*	•	Best Practices:
+	•	Use const by default for values that don’t change.
+	•	Use let for variables whose values will change.
+	•	Avoid using var (to prevent scope issues). */
+
+//Debugging Tools
+/* debugger keyword: Temporarily pauses the execution of code to 
+inspect variables and control flow */
+function debugExample(num) {
+    //debugger; // Pauses execution here if DevTools is open
+    return num * 2;
+  }
+ console.log(debugExample(5));
+/* setting breakpoints using the developer tools
+to pause execution at specific lines or conditions.*/
+
+// console.log()
+/* use ot print vaalues or execution flow for debugging purposess
+   remove them before deployment */

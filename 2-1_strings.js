@@ -83,6 +83,10 @@ console.log("ha ".repeat(3)); // 'ha ha ha '
 
 // replace() - searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced
 console.log(str.replace("world", "everyone")); // 'Hello, everyone!'
+str.replace(/\./g, '-');  // g for global/all \. for literal dot
+str.replace(/./, '-');    // replaces the first character with - because . represents any character
+str.replace(/./g, '-');   // replaces every character with - 
+str.replace(/\./, '-');   // replaces only the first . with -
 
 // slice() - extracts a part of a string and returns a new string
 console.log(str.slice(0, 5)); // 'Hello'
